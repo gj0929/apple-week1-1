@@ -138,3 +138,19 @@ button {
     background-color: #45a049 !important;
     opacity: 0.9;
 }
+
+.comments-section {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.comments-section hr {
+    border: 0;
+    border-top: 1px solid var(--number-border);
+    margin-bottom: 30px;
+}
+
+.comments-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
