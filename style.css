@@ -23,11 +23,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
     margin: 0;
+    padding: 40px 0;
 }
 
 .container {
@@ -36,6 +37,8 @@ body {
     background-color: var(--container-bg);
     border-radius: 12px;
     transition: background-color 0.3s;
+    width: 90%;
+    max-width: 500px;
 }
 
 .lotto-numbers {
@@ -45,8 +48,8 @@ body {
 }
 
 .number {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: var(--number-bg);
     border: 1px solid var(--number-border);
@@ -54,7 +57,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 5px;
-    font-size: 20px;
+    font-size: 18px;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -67,10 +70,71 @@ button {
     border: 1px solid var(--number-border);
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 #theme-toggle {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
+    width: auto;
+}
+
+.partnership-form {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.partnership-form hr {
+    border: 0;
+    border-top: 1px solid var(--number-border);
+    margin-bottom: 30px;
+}
+
+.partnership-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--number-border);
+    border-radius: 4px;
+    background-color: var(--number-bg);
+    color: var(--text-color);
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none !important;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #45a049 !important;
+    opacity: 0.9;
 }
